@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Tec - Laptops</title>
+    
+    <!-- Enlaces a estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="laptops.css" rel="stylesheet">
+
+    <!-- Scripts para Google Sign-In y comentarios -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <meta name="google-signin-client_id" content="32579672627-<resto>.apps.googleusercontent.com">
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Aula Digital</h1>
+    </header>
+    
+    <div class="main-container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <div class="logo-home">
+                <a href="index.html">
+                    <i class="fas fa-laptop"></i>
+                    Aula Tec
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="celulares.html">
+                        <i class="fas fa-mobile-alt"></i>Celulares
+                    </a></li>
+                    <li><a href="laptops.html" class="active">
+                        <i class="fas fa-laptop"></i>Laptops
+                    </a></li>
+                    <li><a href="pc.html">
+                        <i class="fas fa-desktop"></i>PC
+                    </a></li>
+                    <li><a href="consolas.html">
+                        <i class="fas fa-gamepad"></i>Consolas
+                    <li><a href="accesorios.html">
+                        <i class="fas fa-headphones"></i>Accesorios
+                    </a></li>
+                    
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Contenido principal -->
+        <main class="content">
+            <div class="education-section">
+                <h3>Componentes de una Laptop</h3>
+                <div class="components-grid">
+                    <!-- Procesador -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-microchip"></i>
+                            <h4>Procesador (CPU)</h4>
+                            <p>El cerebro de la laptop</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Concepto</h4>
+                                    <p>La unidad central de procesamiento que ejecuta todas las instrucciones y coordina los componentes.</p>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>Intel Core i3/i5/i7/i9</li>
+                                        <li>AMD Ryzen 3/5/7/9</li>
+                                        <li>Múltiples núcleos (4-24)</li>
+                                        <li>Caché de varios niveles</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Funcionalidad</h4>
+                                    <ul>
+                                        <li>Procesa datos e instrucciones</li>
+                                        <li>Gestiona tareas del sistema</li>
+                                        <li>Coordina otros componentes</li>
+                                        <li>Determina el rendimiento general</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Memoria RAM -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-memory"></i>
+                            <h4>Memoria RAM</h4>
+                            <p>Memoria de trabajo</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Concepto</h4>
+                                    <p>La memoria de acceso aleatorio que almacena datos temporales para acceso rápido.</p>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>DDR4/DDR5</li>
+                                        <li>8GB - 64GB</li>
+                                        <li>Velocidades: 3200MHz - 6400MHz</li>
+                                        <li>Dual/Quad channel</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Funcionalidad</h4>
+                                    <ul>
+                                        <li>Multitarea eficiente</li>
+                                        <li>Caché de aplicaciones</li>
+                                        <li>Mejora el rendimiento</li>
+                                        <li>Gestión de datos activos</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Gráfica -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-tv"></i>
+                            <h4>GPU</h4>
+                            <p>Procesamiento gráfico</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Concepto</h4>
+                                    <p>Procesa gráficos, videos y efectos visuales.</p>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>NVIDIA RTX/GTX Series</li>
+                                        <li>AMD Radeon RX Series</li>
+                                        <li>VRAM: 4GB - 16GB</li>
+                                        <li>Ray Tracing y DLSS</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Funcionalidad</h4>
+                                    <ul>
+                                        <li>Renderizado 3D</li>
+                                        <li>Gaming de alto nivel</li>
+                                        <li>Edición de video</li>
+                                        <li>Diseño gráfico</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Almacenamiento -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-hdd"></i>
+                            <h4>Almacenamiento</h4>
+                            <p>Espacio para tus datos</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Concepto</h4>
+                                    <p>Dispositivo que guarda permanentemente tus archivos y programas.</p>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>Tipos: HDD, SSD</li>
+                                        <li>Capacidad: 256GB - 4TB</li>
+                                        <li>Velocidad: 5400 RPM - 7200 RPM (HDD), 500MB/s - 3500MB/s (SSD)</li>
+                                        <li>Interfaz: SATA, NVMe</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Funcionalidad</h4>
+                                    <ul>
+                                        <li>Almacena el sistema operativo</li>
+                                        <li>Guarda aplicaciones y datos</li>
+                                        <li>Permite acceso rápido a archivos</li>
+                                        <li>Mejora el rendimiento general</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Gráfica -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-video"></i>
+                            <h4>Tarjeta Gráfica (GPU)</h4>
+                            <p>Procesamiento de gráficos</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Concepto</h4>
+                                    <p>Unidad encargada de renderizar gráficos y videos.</p>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>Memoria: 4GB - 16GB GDDR6</li>
+                                        <li>Velocidad: 1.5 GHz - 2.5 GHz</li>
+                                        <li>Interfaz: PCIe 4.0</li>
+                                        <li>Consumo: 75W - 300W</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Funcionalidad</h4>
+                                    <ul>
+                                        <li>Renderiza gráficos 3D</li>
+                                        <li>Procesa videos en alta resolución</li>
+                                        <li>Mejora el rendimiento en juegos</li>
+                                        <li>Soporta múltiples monitores</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Batería -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-battery-full"></i>
+                            <h4>Batería</h4>
+                            <p>Fuente de energía portátil</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Concepto</h4>
+                                    <p>Dispositivo que almacena energía para el funcionamiento de la laptop.</p>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>Capacidad: 40Wh - 100Wh</li>
+                                        <li>Tipo: Li-ion, Li-poly</li>
+                                        <li>Duración: 4h - 20h</li>
+                                        <li>Voltaje: 7.4V - 11.1V</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Funcionalidad</h4>
+                                    <ul>
+                                        <li>Proporciona energía portátil</li>
+                                        <li>Permite uso sin conexión a la red</li>
+                                        <li>Soporta cargas rápidas</li>
+                                        <li>Optimiza la duración de la batería</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Agregar después de la sección de componentes -->
+            <div class="education-section">
+                <h3>Catálogo de Laptops por Gama</h3>
+                <div class="components-grid">
+                    <!-- Gama Alta -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-crown"></i>
+                            <h4>Laptops Premium</h4>
+                            <p>Alto rendimiento y calidad</p>
+                            <button class="info-btn">Ver modelos</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Modelos de Alta Gama</h4>
+                                    <ul>
+                                        <li>MacBook Pro 16
+                                            <br>- M3 Max, 32GB RAM
+                                            <br>- SSD 1TB, Pantalla Liquid Retina XDR
+                                            <br>- Precio: $59,999 MXN
+                                        </li>
+                                        <li>Dell XPS 17
+                                            <br>- Intel Core i9-14900H, 64GB RAM
+                                            <br>- RTX 4080, 4K OLED Touch
+                                            <br>- Precio: $54,999 MXN
+                                        </li>
+                                        <!-- Agregar 8 modelos más -->
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gama Media -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-star"></i>
+                            <h4>Laptops Intermedias</h4>
+                            <p>Equilibrio precio-rendimiento</p>
+                            <button class="info-btn">Ver modelos</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Modelos de Gama Media</h4>
+                                    <ul>
+                                        <li>Lenovo IdeaPad 5 Pro
+                                            <br>- Ryzen 7 7735H, 16GB RAM
+                                            <br>- RTX 3050, QHD 165Hz
+                                            <br>- Precio: $19,999 MXN
+                                        </li>
+                                        <li>HP Pavilion Gaming
+                                            <br>- Intel i5-13500H, 16GB RAM
+                                            <br>- RTX 3050 Ti, FHD 144Hz
+                                            <br>- Precio: $18,499 MXN
+                                        </li>
+                                        <!-- Agregar 8 modelos más -->
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gama Baja -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-check"></i>
+                            <h4>Laptops Básicas</h4>
+                            <p>Económicas y funcionales</p>
+                            <button class="info-btn">Ver modelos</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Modelos Económicos</h4>
+                                    <ul>
+                                        <li>Acer Aspire 3
+                                            <br>- Intel i3-1215U, 8GB RAM
+                                            <br>- SSD 256GB, FHD
+                                            <br>- Precio: $9,999 MXN
+                                        </li>
+                                        <li>ASUS VivoBook Go
+                                            <br>- Ryzen 3 7320U, 8GB RAM
+                                            <br>- SSD 512GB, FHD
+                                            <br>- Precio: $8,999 MXN
+                                        </li>
+                                        <!-- Agregar 8 modelos más -->
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gaming -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-gamepad"></i>
+                            <h4>Laptops Gaming</h4>
+                            <p>Especializadas en juegos</p>
+                            <button class="info-btn">Ver modelos</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Modelos Gaming</h4>
+                                    <ul>
+                                        <li>Razer Blade 18
+                                            <br>- i9-14900HX, 32GB RAM
+                                            <br>- RTX 4090, QHD+ 240Hz
+                                            <br>- Precio: $89,999 MXN
+                                        </li>
+                                        <li>MSI Titan GT77 HX
+                                            <br>- i9-13980HX, 64GB RAM
+                                            <br>- RTX 4090, 4K 144Hz
+                                            <br>- Precio: $94,999 MXN
+                                        </li>
+                                        <!-- Agregar 8 modelos más -->
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de comentarios -->
+            <div class="comments-section">
+                <h3>Comentarios</h3>
+                
+                <!-- Login Section -->
+                <div id="loginSection" class="auth-section">
+                    <form id="loginForm" class="login-form">
+                        <h4>Iniciar Sesión</h4>
+                        <div class="login-options">
+                            <!-- Botón de Google -->
+                            <div id="g_id_onload"
+                                data-client_id="TU_CLIENT_ID_DE_GOOGLE"
+                                data-callback="handleGoogleLogin"
+                                data-auto_prompt="false">
+                            </div>
+                            <div class="g_id_signin"
+                                data-type="standard"
+                                data-size="large"
+                                data-theme="outline"
+                                data-text="sign_in_with"
+                                data-shape="rectangular"
+                                data-logo_alignment="left">
+                            </div>
+
+                            <!-- O continuar con email -->
+                            <div class="divider">
+                                <span>O</span>
+                            </div>
+                            
+                            <!-- Formulario existente -->
+                            <div class="form-group">
+                                <input type="email" id="username" placeholder="ejemplo@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="password" placeholder="Contraseña" required>
+                            </div>
+                            <div id="loginError" class="error-message"></div>
+                            <button type="submit">Iniciar Sesión</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Comment Section -->
+                <div id="commentSection" class="comment-section" style="display: none;">
+                    <div class="user-info">
+                        <span id="userDisplay"></span>
+                        <button id="logoutBtn">Cerrar Sesión</button>
+                    </div>
+                    
+                    <form id="commentForm" class="comment-form">
+                        <textarea id="commentText" placeholder="Escribe tu comentario..." required></textarea>
+                        <button type="submit">Publicar Comentario</button>
+                    </form>
+
+                    <div id="commentsList" class="comments-list">
+                        <!-- Los comentarios se insertarán aquí -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="comments.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.component-card');
+
+            cards.forEach(card => {
+                const infoBtn = card.querySelector('.info-btn');
+                const cardContent = card.querySelector('.card-content');
+
+                if (infoBtn && cardContent) {
+                    infoBtn.addEventListener('click', () => {
+                        // Crear overlay
+                        const overlay = document.createElement('div');
+                        overlay.className = 'modal-overlay';
+                        document.body.appendChild(overlay);
+
+                        // Crear contenido modal
+                        const modalContent = document.createElement('div');
+                        modalContent.className = 'modal-content';
+                        modalContent.innerHTML = cardContent.innerHTML;
+                        overlay.appendChild(modalContent);
+
+                        // Activar modal con animación
+                        requestAnimationFrame(() => {
+                            overlay.style.display = 'block';
+                            requestAnimationFrame(() => {
+                                overlay.classList.add('active');
+                                modalContent.classList.add('active');
+                            });
+                        });
+
+                        // Función para cerrar
+                        const closeModal = () => {
+                            overlay.classList.remove('active');
+                            modalContent.classList.remove('active');
+                            setTimeout(() => {
+                                document.body.removeChild(overlay);
+                            }, 300);
+                        };
+
+                        // Usar el botón existente de cerrar
+                        const closeBtn = modalContent.querySelector('.close-btn');
+                        if (closeBtn) {
+                            closeBtn.addEventListener('click', closeModal);
+                        }
+
+                        // Cerrar al hacer clic fuera
+                        overlay.addEventListener('click', (e) => {
+                            if (e.target === overlay) closeModal();
+                        });
+                        
+                        // Cerrar con ESC
+                        document.addEventListener('keydown', (e) => {
+                            if (e.key === 'Escape') closeModal();
+                        });
+                    });
+                }
+            });
+
+            // Inicializar sistema de comentarios
+            const commentSystem = new CommentSystem();
+        });
+    </script>
+</body>
+</html>

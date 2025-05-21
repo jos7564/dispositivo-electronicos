@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Tec - PC</title>
+    
+    <!-- Enlaces a estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="celulare.css" rel="stylesheet">
+    <!-- Meta tags -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <meta name="google-signin-client_id" content="32579672627-<resto>.apps.googleusercontent.com">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Aula Tec-PC</h1>
+    </header>
+    
+    <div class="main-container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <div class="logo-home">
+                <a href="index.html">
+                    <i class="fas fa-desktop"></i>
+                    Aula Tec
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="celulares.html">
+                        <i class="fas fa-mobile-alt"></i>Celulares
+                    </a></li>
+                    <li><a href="laptops.html">
+                        <i class="fas fa-laptop"></i>Laptops
+                    </a></li>
+                    <li><a href="pc.html" class="active">
+                        <i class="fas fa-desktop"></i>PC
+                    </a></li>
+                    <li><a href="consolas.html">
+                        <i class="fas fa-gamepad"></i>Consolas
+                    <li><a href="accesorios.html">
+                        <i class="fas fa-headphones"></i>Accesorios
+                    </a></li>
+                    
+
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Contenido principal -->
+        <main class="content">
+            <h2>Guía Educativa de Computadoras de Escritorio</h2>
+            
+            <!-- Componentes de PC -->
+            <div class="education-section">
+                <h3>Componentes Esenciales de una PC</h3>
+                <div class="components-grid">
+                    <!-- Procesador -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-microchip"></i>
+                            <h4>Procesador (CPU)</h4>
+                            <p>El cerebro de la computadora</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Concepto</h4>
+                                    <p>La unidad central que procesa todas las instrucciones del sistema.</p>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>Intel Core i3/i5/i7/i9 12va-13va gen</li>
+                                        <li>AMD Ryzen 3/5/7/9 serie 7000</li>
+                                        <li>Múltiples núcleos (4-32)</li>
+                                        <li>Soporte overclocking en modelos K/X</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Placa Madre -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-server"></i>
+                            <h4>Placa Madre</h4>
+                            <p>La base del sistema</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Concepto</h4>
+                                    <p>Conecta y permite la comunicación entre componentes.</p>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>Sockets: LGA 1700, AM5</li>
+                                        <li>Chipsets: Z790, B650, X670</li>
+                                        <li>Formatos: ATX, mATX, ITX</li>
+                                        <li>PCIe Gen 4/5, DDR5</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta Gráfica -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-tv"></i>
+                            <h4>Tarjeta Gráfica</h4>
+                            <p>Potencia visual</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>NVIDIA RTX 4060-4090</li>
+                                        <li>AMD RX 7600-7900XTX</li>
+                                        <li>VRAM: 8GB-24GB GDDR6X</li>
+                                        <li>Ray Tracing, DLSS 3, FSR 3</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Memoria RAM -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-memory"></i>
+                            <h4>Memoria RAM</h4>
+                            <p>Memoria principal</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>DDR4: 3200-4000MHz</li>
+                                        <li>DDR5: 4800-7200MHz</li>
+                                        <li>Capacidades: 8GB-128GB</li>
+                                        <li>Dual/Quad channel</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fuente de Poder -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-plug"></i>
+                            <h4>Fuente de Poder</h4>
+                            <p>Energía del sistema</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Características</h4>
+                                    <ul>
+                                        <li>Potencias: 500W-1600W</li>
+                                        <li>Certificaciones: 80+ Bronze a Titanium</li>
+                                        <li>Modular/Semi-modular</li>
+                                        <li>Protecciones: OCP, OVP, UVP</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Almacenamiento -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-hdd"></i>
+                            <h4>Almacenamiento</h4>
+                            <p>Datos y programas</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Tipos</h4>
+                                    <ul>
+                                        <li>SSD NVMe PCIe 4.0/5.0</li>
+                                        <li>SSD SATA</li>
+                                        <li>HDD 7200RPM</li>
+                                        <li>Capacidades: 250GB-18TB</li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de comentarios -->
+            <div class="comments-section">
+                <h3>Comentarios</h3>
+                
+                <!-- Login Section -->
+                <div id="loginSection" class="auth-section">
+                    <form id="loginForm" class="login-form">
+                        <h4>Iniciar Sesión</h4>
+                        <div class="login-options">
+                            <!-- Botón de Google -->
+                            <div id="g_id_onload"
+                                data-client_id="TU_CLIENT_ID_DE_GOOGLE"
+                                data-callback="handleGoogleLogin"
+                                data-auto_prompt="false">
+                            </div>
+                            <div class="g_id_signin"
+                                data-type="standard"
+                                data-size="large"
+                                data-theme="outline"
+                                data-text="sign_in_with"
+                                data-shape="rectangular"
+                                data-logo_alignment="left">
+                            </div>
+
+                            <!-- O continuar con email -->
+                            <div class="divider">
+                                <span>O</span>
+                            </div>
+                            
+                            <!-- Formulario existente -->
+                            <div class="form-group">
+                                <input type="email" id="username" placeholder="ejemplo@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="password" placeholder="Contraseña" required>
+                            </div>
+                            <div id="loginError" class="error-message"></div>
+                            <button type="submit">Iniciar Sesión</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Comment Section -->
+                <div id="commentSection" class="comment-section" style="display: none;">
+                    <div class="user-info">
+                        <span id="userDisplay"></span>
+                        <button id="logoutBtn">Cerrar Sesión</button>
+                    </div>
+                    
+                    <form id="commentForm" class="comment-form">
+                        <textarea id="commentText" placeholder="Escribe tu comentario..." required></textarea>
+                        <button type="submit">Publicar Comentario</button>
+                    </form>
+
+                    <div id="commentsList" class="comments-list">
+                        <!-- Los comentarios se insertarán aquí -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="comments.js"></script>
+    <script src="pc.js"></script>
+</body>
+</html>

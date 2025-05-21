@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Tec - Celulares</title>
+    
+    <!-- Enlaces a estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="celulare.css" rel="stylesheet">
+    <!-- Meta tags -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <meta name="google-signin-client_id" content="32579672627-<resto>.apps.googleusercontent.com">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Aula Tec-Celulares</h1>
+    </header>
+    
+    <div class="main-container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <div class="logo-home">
+                <a href="index.html">
+                    <i class="fas fa-mobile-alt"></i>
+                    Aula Tec
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="celulares.html" class="active"> 
+                        <i class="fas fa-mobile-alt"></i>Celulares
+                    </a></li>
+                    <li><a href="laptops.html">
+                        <i class="fas fa-laptop"></i>Laptops
+                    </a></li>
+                    <li><a href="pc.html">
+                        <i class="fas fa-desktop"></i>PC
+                    </a></li>
+                    <li><a href="consolas.html">
+                        <i class="fas fa-gamepad"></i>Consolas
+                    </a></li>
+                    <li><a href="accesorios.html">
+                        <i class="fas fa-headphones"></i>Accesorios
+                    </a></li>
+                    
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Contenido principal -->
+        <main class="content">
+            <h2>Guía Educativa de Smartphones</h2>
+            
+            <!-- Sección de componentes -->
+            <div class="education-section">
+                <h3>Componentes del Smartphone</h3>
+                <div class="components-grid">
+    <!-- Procesador -->
+    <div class="component-card">
+        <div class="card-header">
+            <i class="fas fa-microchip"></i>
+            <h4>Procesador (SoC)</h4>
+            <p>El cerebro del dispositivo</p>
+            <button class="info-btn">Ver información</button>
+        </div>
+        
+        <div class="card-content">
+            <div class="info-details">
+                <section class="info-section">
+                    <h4>Concepto</h4>
+                    <p>El procesador o SoC (System on Chip) es el cerebro del teléfono, responsable de ejecutar todas las instrucciones y coordinar todos los componentes.</p>
+                </section>
+                <section class="info-section">
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Velocidad de procesamiento: 1.8 GHz - 3.0 GHz</li>
+                        <li>Múltiples núcleos (4-8) para mejor rendimiento</li>
+                        <li>GPU integrada para gráficos</li>
+                        <li>Fabricación en nanómetros (4nm - 7nm)</li>
+                    </ul>
+                </section>
+                <section class="info-section">
+                    <h4>Funcionalidad</h4>
+                    <ul>
+                        <li>Ejecuta aplicaciones y juegos</li>
+                        <li>Procesa fotos y videos</li>
+                        <li>Gestiona la multitarea</li>
+                        <li>Controla el consumo de energía</li>
+                    </ul>
+                </section>
+                <button class="close-btn">Cerrar información</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memoria RAM -->
+    <div class="component-card">
+        <div class="card-header">
+            <i class="fas fa-memory"></i>
+            <h4>Memoria RAM</h4>
+            <p>Memoria de acceso rápido</p>
+            <button class="info-btn">Ver información</button>
+        </div>
+        
+        <div class="card-content">
+            <div class="info-details">
+                <section class="info-section">
+                    <h4>Concepto</h4>
+                    <p>La memoria RAM es el espacio de trabajo temporal donde el teléfono mantiene los datos de uso inmediato.</p>
+                </section>
+                <section class="info-section">
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Capacidad: 4GB - 16GB</li>
+                        <li>Tipo: LPDDR4, LPDDR5</li>
+                        <li>Velocidad de acceso rápido</li>
+                        <li>Memoria volátil (se borra al apagar)</li>
+                    </ul>
+                </section>
+                <section class="info-section">
+                    <h4>Funcionalidad</h4>
+                    <ul>
+                        <li>Permite la multitarea fluida</li>
+                        <li>Mejora la velocidad de las apps</li>
+                        <li>Mantiene apps en segundo plano</li>
+                        <li>Optimiza el rendimiento general</li>
+                    </ul>
+                </section>
+                <button class="close-btn">Cerrar información</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Almacenamiento -->
+    <div class="component-card">
+        <div class="card-header">
+            <i class="fas fa-hdd"></i>
+            <h4>Almacenamiento</h4>
+            <p>Memoria permanente</p>
+            <button class="info-btn">Ver información</button>
+        </div>
+        
+        <div class="card-content">
+            <div class="info-details">
+                <section class="info-section">
+                    <h4>Concepto</h4>
+                    <p>El almacenamiento interno es donde se guardan permanentemente todos los datos del teléfono.</p>
+                </section>
+                <section class="info-section">
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Capacidad: 64GB - 1TB</li>
+                        <li>Tipo: UFS 3.1, NVMe</li>
+                        <li>Memoria no volátil</li>
+                        <li>Expansible con MicroSD</li>
+                    </ul>
+                </section>
+                <section class="info-section">
+                    <h4>Funcionalidad</h4>
+                    <ul>
+                        <li>Guarda sistema operativo</li>
+                        <li>Almacena apps y juegos</li>
+                        <li>Conserva fotos y videos</li>
+                        <li>Mantiene documentos y archivos</li>
+                    </ul>
+                </section>
+                <button class="close-btn">Cerrar información</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Placa Base -->
+    <div class="component-card">
+        <div class="card-header">
+            <i class="fas fa-microchip"></i>
+            <h4>Placa Base</h4>
+            <p>Conecta todos los componentes</p>
+            <button class="info-btn">Ver información</button>
+        </div>
+        
+        <div class="card-content">
+            <div class="info-details">
+                <section class="info-section">
+                    <h4>Concepto</h4>
+                    <p>La placa base es el circuito principal que conecta y permite la comunicación entre todos los componentes del teléfono.</p>
+                </section>
+                <section class="info-section">
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Circuitos multicapa</li>
+                        <li>Diseño compacto y eficiente</li>
+                        <li>Conectores específicos para cada componente</li>
+                        <li>Sistema de distribución de energía</li>
+                    </ul>
+                </section>
+                <section class="info-section">
+                    <h4>Funcionalidad</h4>
+                    <ul>
+                        <li>Distribuye energía a los componentes</li>
+                        <li>Permite la comunicación entre partes</li>
+                        <li>Mantiene la estabilidad del sistema</li>
+                        <li>Gestiona las señales eléctricas</li>
+                    </ul>
+                </section>
+                <button class="close-btn">Cerrar información</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cámara -->
+    <div class="component-card">
+        <div class="card-header">
+            <i class="fas fa-camera"></i>
+            <h4>Sistema de Cámaras</h4>
+            <p>Captura de fotos y videos</p>
+            <button class="info-btn">Ver información</button>
+        </div>
+        
+        <div class="card-content">
+            <div class="info-details">
+                <section class="info-section">
+                    <h4>Concepto</h4>
+                    <p>El sistema de cámaras permite capturar imágenes y videos mediante sensores especializados y procesamiento avanzado.</p>
+                </section>
+                <section class="info-section">
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Sensor principal: 12MP - 108MP</li>
+                        <li>Múltiples lentes (gran angular, telefoto)</li>
+                        <li>Estabilización óptica y digital</li>
+                        <li>Procesamiento por IA</li>
+                    </ul>
+                </section>
+                <section class="info-section">
+                    <h4>Funcionalidad</h4>
+                    <ul>
+                        <li>Captura fotos en alta resolución</li>
+                        <li>Graba videos en 4K/8K</li>
+                        <li>Modo retrato y nocturno</li>
+                        <li>Reconocimiento de escenas</li>
+                    </ul>
+                </section>
+                <button class="close-btn">Cerrar información</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Señal y Conectividad -->
+    <div class="component-card">
+        <div class="card-header">
+            <i class="fas fa-wifi"></i>
+            <h4>Señal y Conectividad</h4>
+            <p>Comunicación inalámbrica</p>
+            <button class="info-btn">Ver información</button>
+        </div>
+        
+        <div class="card-content">
+            <div class="info-details">
+                <section class="info-section">
+                    <h4>Concepto</h4>
+                    <p>Los sistemas de conectividad permiten la comunicación inalámbrica del dispositivo con redes y otros dispositivos.</p>
+                </section>
+                <section class="info-section">
+                    <h4>Características</h4>
+                    <ul>
+                        <li>5G/4G LTE</li>
+                        <li>WiFi 6/6E</li>
+                        <li>Bluetooth 5.2/5.3</li>
+                        <li>NFC y GPS</li>
+                    </ul>
+                </section>
+                <section class="info-section">
+                    <h4>Funcionalidad</h4>
+                    <ul>
+                        <li>Conexión a internet móvil</li>
+                        <li>Redes WiFi de alta velocidad</li>
+                        <li>Conexión con accesorios</li>
+                        <li>Pagos móviles y localización</li>
+                    </ul>
+                </section>
+                <button class="close-btn">Cerrar información</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sistema Operativo -->
+    <div class="component-card">
+        <div class="card-header">
+            <i class="fas fa-cog"></i>
+            <h4>Sistema Operativo</h4>
+            <p>Software principal</p>
+            <button class="info-btn">Ver información</button>
+        </div>
+        
+        <div class="card-content">
+            <div class="info-details">
+                <section class="info-section">
+                    <h4>Concepto</h4>
+                    <p>El sistema operativo es el software que controla el hardware y gestiona los recursos del dispositivo.</p>
+                </section>
+                <section class="info-section">
+                    <h4>Tipos Principales</h4>
+                    <ul>
+                        <li>Android (Google)</li>
+                        <li>iOS (Apple)</li>
+                        <li>HarmonyOS (Huawei)</li>
+                        <li>Versiones personalizadas (MIUI, OneUI)</li>
+                    </ul>
+                </section>
+                <section class="info-section">
+                    <h4>Funcionalidad</h4>
+                    <ul>
+                        <li>Gestión de aplicaciones</li>
+                        <li>Control de hardware</li>
+                        <li>Seguridad del dispositivo</li>
+                        <li>Interfaz de usuario</li>
+                    </ul>
+                </section>
+                <button class="close-btn">Cerrar información</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Núcleos del Procesador -->
+    <div class="component-card">
+        <div class="card-header">
+            <i class="fas fa-microchip"></i>
+            <h4>Núcleos del Procesador</h4>
+            <p>Unidades de procesamiento</p>
+            <button class="info-btn">Ver información</button>
+        </div>
+        
+        <div class="card-content">
+            <div class="info-details">
+                <section class="info-section">
+                    <h4>Concepto</h4>
+                    <p>Los núcleos son unidades independientes de procesamiento que permiten realizar múltiples tareas simultáneamente.</p>
+                </section>
+                <section class="info-section">
+                    <h4>Características</h4>
+                    <ul>
+                        <li>Configuración octa-core común</li>
+                        <li>Diseño big.LITTLE</li>
+                        <li>Frecuencias variables</li>
+                        <li>Tecnología de 4-5nm</li>
+                    </ul>
+                </section>
+                <section class="info-section">
+                    <h4>Funcionalidad</h4>
+                    <ul>
+                        <li>Procesamiento paralelo</li>
+                        <li>Eficiencia energética</li>
+                        <li>Distribución de cargas</li>
+                        <li>Optimización de rendimiento</li>
+                    </ul>
+                </section>
+                <button class="close-btn">Cerrar información</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="component-card">
+        <div class="card-header">
+            <i class="fas fa-icon"></i>
+            <h4>Título</h4>
+            <p>Descripción</p>
+            <button class="info-btn">Ver información</button>
+        </div>
+        <div class="card-content">
+            <!-- Contenido de la tarjeta -->
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="education-section">
+    <h3>Catálogo de Smartphones por Gama</h3>
+    <div class="components-grid">
+        <!-- Gama Alta -->
+        <div class="component-card">
+            <div class="card-header">
+                <i class="fas fa-crown"></i>
+                <h4>Gama Alta</h4>
+                <p>Los más avanzados del mercado</p>
+                <button class="info-btn">Ver modelos</button>
+            </div>
+            <div class="card-content">
+                <div class="info-details">
+                    <section class="info-section">
+                        <h4>Modelos Premium</h4>
+                        <ul>
+                            <li>iPhone 15 Pro Max
+                                <br>- A17 Pro, 8GB RAM, 1TB
+                                <br>- Cámara 48MP, ProRAW
+                                <br>- Precio: $32,999 MXN
+                            </li>
+                            <li>Samsung Galaxy S24 Ultra
+                                <br>- Snapdragon 8 Gen 3, 12GB RAM
+                                <br>- Cámara 200MP, zoom 10x
+                                <br>- Precio: $31,999 MXN
+                            </li>
+                            <li>Google Pixel 8 Pro
+                                <br>- Tensor G3, 12GB RAM
+                                <br>- Cámara 50MP, IA avanzada
+                                <br>- Precio: $28,999 MXN
+                            </li>
+                            <li>Xiaomi 14 Pro
+                                <br>- Snapdragon 8 Gen 3, 16GB RAM
+                                <br>- Cámara Leica 50MP
+                                <br>- Precio: $25,999 MXN
+                            </li>
+                            <li>OPPO Find X7 Ultra
+                                <br>- Dimensity 9300, 16GB RAM
+                                <br>- Cuatro cámaras 50MP
+                                <br>- Precio: $27,999 MXN
+                            </li>
+                            <li>OnePlus 12
+                                <br>- Snapdragon 8 Gen 3, 16GB RAM
+                                <br>- Cámara Hasselblad 50MP
+                                <br>- Precio: $24,999 MXN
+                            </li>
+                            <li>vivo X100 Pro
+                                <br>- Dimensity 9300, 16GB RAM
+                                <br>- Cámara ZEISS 50MP
+                                <br>- Precio: $26,999 MXN
+                            </li>
+                            <li>ASUS ROG Phone 8 Pro
+                                <br>- Snapdragon 8 Gen 3, 24GB RAM
+                                <br>- Pantalla 165Hz, 6000mAh
+                                <br>- Precio: $29,999 MXN
+                            </li>
+                            <li>Sony Xperia 1 V
+                                <br>- Snapdragon 8 Gen 2, 12GB RAM
+                                <br>- Cámara profesional 48MP
+                                <br>- Precio: $28,999 MXN
+                            </li>
+                            <li>Huawei P70 Pro
+                                <br>- Kirin 9000S, 12GB RAM
+                                <br>- Cámara XMAGE 50MP
+                                <br>- Precio: $27,999 MXN
+                            </li>
+                        </ul>
+                    </section>
+                    <button class="close-btn">Cerrar información</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gama Media -->
+        <div class="component-card">
+            <div class="card-header">
+                <i class="fas fa-star"></i>
+                <h4>Gama Media</h4>
+                <p>Excelente relación calidad-precio</p>
+                <button class="info-btn">Ver modelos</button>
+            </div>
+            <div class="card-content">
+                <div class="info-details">
+                    <section class="info-section">
+                        <h4>Modelos Intermedios</h4>
+                        <ul>
+                            <li>Samsung Galaxy A54
+                                <br>- Exynos 1380, 8GB RAM
+                                <br>- Cámara 50MP, IP67
+                                <br>- Precio: $8,999 MXN
+                            </li>
+                            <li>Redmi Note 13 Pro+
+                                <br>- Dimensity 7200, 12GB RAM
+                                <br>- Cámara 200MP
+                                <br>- Precio: $7,999 MXN
+                            </li>
+                            <li>Nothing Phone (2)
+                                <br>- Snapdragon 8+ Gen 1, 12GB RAM
+                                <br>- Interfaz Glyph
+                                <br>- Precio: $11,999 MXN
+                            </li>
+                            <li>OnePlus Nord 3
+                                <br>- Dimensity 9000, 16GB RAM
+                                <br>- Cámara 50MP
+                                <br>- Precio: $9,999 MXN
+                            </li>
+                            <li>POCO F5
+                                <br>- Snapdragon 7+ Gen 2, 12GB RAM
+                                <br>- Pantalla 120Hz
+                                <br>- Precio: $8,499 MXN
+                            </li>
+                            <li>Realme 11 Pro+
+                                <br>- Dimensity 7050, 12GB RAM
+                                <br>- Cámara 200MP
+                                <br>- Precio: $7,999 MXN
+                            </li>
+                            <li>Motorola Edge 40
+                                <br>- Dimensity 8020, 8GB RAM
+                                <br>- IP68, 144Hz
+                                <br>- Precio: $9,499 MXN
+                            </li>
+                            <li>vivo V29
+                                <br>- Snapdragon 778G, 8GB RAM
+                                <br>- Aura Light
+                                <br>- Precio: $8,999 MXN
+                            </li>
+                            <li>HONOR 90
+                                <br>- Snapdragon 7 Gen 1, 12GB RAM
+                                <br>- Pantalla curva 120Hz
+                                <br>- Precio: $10,999 MXN
+                            </li>
+                            <li>Xiaomi POCO X6 Pro
+                                <br>- Dimensity 8300, 12GB RAM
+                                <br>- AMOLED 120Hz
+                                <br>- Precio: $7,499 MXN
+                            </li>
+                        </ul>
+                    </section>
+                    <button class="close-btn">Cerrar información</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gama Baja -->
+        <div class="component-card">
+            <div class="card-header">
+                <i class="fas fa-check"></i>
+                <h4>Gama Baja</h4>
+                <p>Económicos y funcionales</p>
+                <button class="info-btn">Ver modelos</button>
+            </div>
+            <div class="card-content">
+                <div class="info-details">
+                    <section class="info-section">
+                        <h4>Modelos Económicos</h4>
+                        <ul>
+                            <li>Redmi 13C
+                                <br>- Helio G85, 4GB RAM
+                                <br>- Cámara 50MP
+                                <br>- Precio: $3,499 MXN
+                            </li>
+                            <li>Samsung Galaxy A14
+                                <br>- Exynos 850, 4GB RAM
+                                <br>- Pantalla 90Hz
+                                <br>- Precio: $3,999 MXN
+                            </li>
+                            <li>Motorola Moto G14
+                                <br>- Unisoc T616, 4GB RAM
+                                <br>- Diseño premium
+                                <br>- Precio: $2,999 MXN
+                            </li>
+                            <li>Realme C55
+                                <br>- Helio G88, 6GB RAM
+                                <br>- Carga 33W
+                                <br>- Precio: $3,799 MXN
+                            </li>
+                            <li>POCO M6
+                                <br>- Dimensity 700, 4GB RAM
+                                <br>- Batería 5000mAh
+                                <br>- Precio: $3,299 MXN
+                            </li>
+                            <li>Infinix Hot 40
+                                <br>- Helio G88, 4GB RAM
+                                <br>- Pantalla 90Hz
+                                <br>- Precio: $2,799 MXN
+                            </li>
+                            <li>Nokia G22
+                                <br>- Unisoc T606, 4GB RAM
+                                <br>- Reparable
+                                <br>- Precio: $3,499 MXN
+                            </li>
+                            <li>vivo Y27
+                                <br>- Helio G85, 6GB RAM
+                                <br>- Carga 44W
+                                <br>- Precio: $3,999 MXN
+                            </li>
+                            <li>HONOR X7b
+                                <br>- Snapdragon 680, 4GB RAM
+                                <br>- Batería 6000mAh
+                                <br>- Precio: $3,699 MXN
+                            </li>
+                            <li>TCL 40 SE
+                                <br>- Helio G37, 4GB RAM
+                                <br>- Pantalla 90Hz
+                                <br>- Precio: $2,999 MXN
+                            </li>
+                        </ul>
+                    </section>
+                    <button class="close-btn">Cerrar información</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- Sección de comentarios -->
+            <div class="comments-section">
+                <h3>Comentarios</h3>
+                
+                <!-- Login Section -->
+                <div id="loginSection" class="auth-section">
+                    <form id="loginForm" class="login-form">
+                        <h4>Iniciar Sesión</h4>
+                        <div class="login-options">
+                            <!-- Botón de Google -->
+                            <div id="g_id_onload"
+                                data-client_id="TU_CLIENT_ID_DE_GOOGLE"
+                                data-callback="handleGoogleLogin"
+                                data-auto_prompt="false">
+                            </div>
+                            <div class="g_id_signin"
+                                data-type="standard"
+                                data-size="large"
+                                data-theme="outline"
+                                data-text="sign_in_with"
+                                data-shape="rectangular"
+                                data-logo_alignment="left">
+                            </div>
+
+                            <!-- O continuar con email -->
+                            <div class="divider">
+                                <span>O</span>
+                            </div>
+                            
+                            <!-- Formulario existente -->
+                            <div class="form-group">
+                                <input type="email" id="username" placeholder="ejemplo@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="password" placeholder="Contraseña" required>
+                            </div>
+                            <div id="loginError" class="error-message"></div>
+                            <button type="submit">Iniciar Sesión</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Comment Section -->
+                <div id="commentSection" class="comment-section" style="display: none;">
+                    <div class="user-info">
+                        <span id="userDisplay"></span>
+                        <button id="logoutBtn">Cerrar Sesión</button>
+                    </div>
+                    
+                    <form id="commentForm" class="comment-form">
+                        <textarea id="commentText" placeholder="Escribe tu comentario..." required></textarea>
+                        <button type="submit">Publicar Comentario</button>
+                    </form>
+
+                    <div id="commentsList" class="comments-list">
+                        <!-- Los comentarios se insertarán aquí -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="celulare.js"></script>
+    <script src="comments.js"></script>
+</body>
+</html>

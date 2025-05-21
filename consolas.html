@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Tec - Consolas</title>
+    
+    <!-- Enlaces a estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="consolas.css" rel="stylesheet">  <!-- Cambiado de celulare.css a consolas.css -->
+    
+    <!-- Meta tags -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <meta name="google-signin-client_id" content="32579672627-<resto>.apps.googleusercontent.com">
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Aula Tec - Consolas de Videojuegos</h1>
+    </header>
+    
+    <div class="main-container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <div class="logo-home">
+                <a href="index.html">
+                    <i class="fas fa-gamepad"></i>
+                    Aula Tec
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="celulares.html">
+                        <i class="fas fa-mobile-alt"></i>Celulares
+                    </a></li>
+                    <li><a href="laptops.html">
+                        <i class="fas fa-laptop"></i>Laptops
+                    </a></li>
+                    <li><a href="pc.html">
+                        <i class="fas fa-desktop"></i>PC
+                    </a></li>
+                    <li><a href="consolas.html" class="active">
+                        <i class="fas fa-gamepad"></i>Consolas
+                    </a></li>
+                    <li><a href="accesorios.html">
+                        <i class="fas fa-headphones"></i>Accesorios
+                    </a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Contenido principal -->
+        <main class="content">
+            <div class="education-section">
+                <h3>Consolas de Nueva Generación</h3>
+                <div class="components-grid">
+                    <!-- PlayStation 5 -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fab fa-playstation"></i>
+                            <h4>PlayStation 5</h4>
+                            <p>La nueva generación de Sony</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Especificaciones</h4>
+                                    <ul>
+                                        <li>CPU: AMD Zen 2 (8 núcleos/16 hilos)</li>
+                                        <li>GPU: 10.28 TFLOPS RDNA 2</li>
+                                        <li>RAM: 16GB GDDR6</li>
+                                        <li>SSD: 825GB Personalizado</li>
+                                        <li>Resolución: 4K hasta 120fps</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características Únicas</h4>
+                                    <ul>
+                                        <li>Control DualSense con retroalimentación háptica</li>
+                                        <li>Audio 3D Tempest</li>
+                                        <li>Ray Tracing por hardware</li>
+                                        <li>PlayStation Plus Collection</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Xbox Series X -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fab fa-xbox"></i>
+                            <h4>Xbox Series X</h4>
+                            <p>La más potente de Microsoft</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Especificaciones</h4>
+                                    <ul>
+                                        <li>CPU: AMD Zen 2 (8 núcleos/16 hilos)</li>
+                                        <li>GPU: 12 TFLOPS RDNA 2</li>
+                                        <li>RAM: 16GB GDDR6</li>
+                                        <li>SSD: 1TB NVMe</li>
+                                        <li>Resolución: 4K hasta 120fps</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características Únicas</h4>
+                                    <ul>
+                                        <li>Quick Resume</li>
+                                        <li>Smart Delivery</li>
+                                        <li>Xbox Game Pass Ultimate</li>
+                                        <li>Retrocompatibilidad extensa</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nintendo Switch -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-gamepad"></i>
+                            <h4>Nintendo Switch OLED</h4>
+                            <p>La híbrida de Nintendo</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Especificaciones</h4>
+                                    <ul>
+                                        <li>Pantalla: OLED 7 pulgadas</li>
+                                        <li>CPU/GPU: NVIDIA Tegra Custom</li>
+                                        <li>RAM: 4GB LPDDR4</li>
+                                        <li>Almacenamiento: 64GB</li>
+                                        <li>Resolución: 720p portátil/1080p dock</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características Únicas</h4>
+                                    <ul>
+                                        <li>Modo portátil y TV</li>
+                                        <li>Joy-Con desmontables</li>
+                                        <li>Nintendo Switch Online</li>
+                                        <li>Multijugador local</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-section">
+                <h3>Consolas Portátiles</h3>
+                <div class="components-grid">
+                    <!-- Steam Deck -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fab fa-steam"></i>
+                            <h4>Steam Deck</h4>
+                            <p>PC Gaming Portátil</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Especificaciones</h4>
+                                    <ul>
+                                        <li>CPU: AMD Zen 2 (4 núcleos/8 hilos)</li>
+                                        <li>GPU: AMD RDNA 2</li>
+                                        <li>RAM: 16GB LPDDR5</li>
+                                        <li>Pantalla: 7" LCD 800p 60Hz</li>
+                                        <li>Almacenamiento: 64GB/256GB/512GB</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características Únicas</h4>
+                                    <ul>
+                                        <li>Compatible con juegos de PC</li>
+                                        <li>SteamOS personalizado</li>
+                                        <li>Controles completos</li>
+                                        <li>Dock opcional para TV</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nintendo Switch Lite -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-gamepad"></i>
+                            <h4>Nintendo Switch Lite</h4>
+                            <p>Portátil Compacta</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Especificaciones</h4>
+                                    <ul>
+                                        <li>Pantalla: 5.5" LCD táctil</li>
+                                        <li>CPU/GPU: NVIDIA Tegra Custom</li>
+                                        <li>RAM: 4GB LPDDR4</li>
+                                        <li>Almacenamiento: 32GB</li>
+                                        <li>Resolución: 720p nativa</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características Únicas</h4>
+                                    <ul>
+                                        <li>Diseño compacto y ligero</li>
+                                        <li>Controles integrados</li>
+                                        <li>Modo exclusivo portátil</li>
+                                        <li>Compatible con juegos de Switch</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ASUS ROG Ally -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-laptop-gaming"></i>
+                            <h4>ASUS ROG Ally</h4>
+                            <p>La Competencia de Steam Deck</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Especificaciones</h4>
+                                    <ul>
+                                        <li>CPU: AMD Ryzen Z1 Extreme</li>
+                                        <li>GPU: AMD RDNA 3</li>
+                                        <li>RAM: 16GB LPDDR5</li>
+                                        <li>Pantalla: 7" 1080p 120Hz</li>
+                                        <li>Almacenamiento: 512GB NVMe</li>
+                                    </ul>
+                                </section>
+                                <section class="info-section">
+                                    <h4>Características Únicas</h4>
+                                    <ul>
+                                        <li>Windows 11 integrado</li>
+                                        <li>Pantalla táctil FHD</li>
+                                        <li>Compatible con Game Pass</li>
+                                        <li>Armory Crate SE</li>
+                                    </ul>
+                                </section>
+                                <button class="close-btn">Cerrar información</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de comentarios -->
+            <div class="comments-section">
+                <h3>Comentarios</h3>
+                <!-- Login Section -->
+                <div id="loginSection" class="auth-section">
+                    <form id="loginForm" class="login-form">
+                        <h4>Iniciar Sesión</h4>
+                        <div class="login-options">
+                            <!-- Botón de Google -->
+                            <div id="g_id_onload"
+                                data-client_id="TU_CLIENT_ID_DE_GOOGLE"
+                                data-callback="handleGoogleLogin"
+                                data-auto_prompt="false">
+                            </div>
+                            <div class="g_id_signin"
+                                data-type="standard"
+                                data-size="large"
+                                data-theme="outline"
+                                data-text="sign_in_with"
+                                data-shape="rectangular"
+                                data-logo_alignment="left">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="commentsList" class="comments-list">
+                    <!-- Los comentarios se insertarán aquí -->
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="celulare.js"></script>
+    <script src="comments.js"></script>
+</body>
+</html>

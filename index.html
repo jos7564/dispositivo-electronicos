@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Tec - Tu Guía Tecnológica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Cambiar el nombre del archivo CSS -->
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sección Hero con Video -->
+    <section class="hero-section">
+        <div class="hero-video">
+            <video autoplay muted loop id="bgVideo">
+                <source src="tech-background.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Bienvenido a Aula Tec</h1>
+            <p>Tu guía definitiva en el mundo de la tecnología</p>
+            <div class="hero-buttons">
+                <a href="#explore" class="btn-primary">Explorar <i class="fas fa-arrow-right"></i></a>
+                <a href="#contacto" class="btn-secondary">Contacto <i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Descubre más</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Sección de Categorías -->
+    <section id="explore" class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Celulares</h3>
+                    <p>Encuentra el smartphone perfecto para ti</p>
+                    <a href="celulares.html" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Laptops</h3>
+                    <p>Portátiles para cada necesidad</p>
+                    <a href="laptops.html" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>PC</h3>
+                    <p>Computadoras de escritorio potentes</p>
+                    <a href="pc.html" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Nueva categoría de Consolas -->
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Consolas</h3>
+                    <p>Las mejores consolas de videojuegos</p>
+                    <a href="consolas.html" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Accesorios</h3>
+                    <p>Complementos para tus dispositivos</p>
+                    <a href="accesorios.html" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="contact-header">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">¿Tienes alguna pregunta? Estamos aquí para ayudarte</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>--------------</p>
+                            <a href="mailto:info@aulatec.com" class="contact-link">Enviar email</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <p>-----------</p>
+                            <a href="tel:+521234567890" class="contact-link">Llamar ahora</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ubicación</h3>
+                            <p>--------------</p>
+                            <a href="#" class="contact-link">Ver en mapa</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Tu Nombre</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Tu Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Tu Mensaje</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-logo">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Aula Tec</h3>
+                    <p>Educación tecnológica para todos</p>
+                    <div class="brand-description">
+                        <p>Una plataforma dedicada a proporcionar conocimiento accesible sobre tecnología, ayudándote a tomar mejores decisiones informadas.</p>
+                    </div>
+                </div>
+                <div class="footer-sections">
+                    <div class="footer-links">
+                        <h4>Categorías</h4>
+                        <ul>
+                            <li><a href="celulares.html">Celulares</a></li>
+                            <li><a href="laptops.html">Laptops</a></li>
+                            <li><a href="pc.html">PC</a></li>
+                            <li><a href="consolas.html">consolas</a></li>
+                            <li><a href="accesorios.html">Accesorios</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <p>&copy; 2024 Aula Tec. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-extra">
+                    <a href="privacidad.html">Política de Privacidad</a>
+                    <a href="terminos.html">Términos de Uso</a>
+                    <a href="cookies.html">Política de Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Animación suave al scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

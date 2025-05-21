@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Tec - Accesorios</title>
+    
+    <!-- Enlaces a estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="accesorios.css" rel="stylesheet">
+
+    <!-- Meta tags -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <meta name="google-signin-client_id" content="32579672627-<resto>.apps.googleusercontent.com">
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Aula Tec - Accesorios</h1>
+    </header>
+    
+    <div class="main-container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <div class="logo-home">
+                <a href="index.html">
+                    <i class="fas fa-headphones"></i>
+                    Aula Tec
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="celulares.html">
+                        <i class="fas fa-mobile-alt"></i>Celulares
+                    </a></li>
+                    <li><a href="laptops.html">
+                        <i class="fas fa-laptop"></i>Laptops
+                    </a></li>
+                    <li><a href="pc.html">
+                        <i class="fas fa-desktop"></i>PC
+                    </a></li>
+                    <li><a href="consolas.html">
+                        <i class="fas fa-gamepad"></i>Consolas
+                    </a></li>
+                    <li><a href="accesorios.html" class="active">
+                        <i class="fas fa-headphones"></i>Accesorios
+                    </a></li>
+                    
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Contenido principal -->
+        <main class="content">
+            <h2>Guía de Accesorios Tecnológicos</h2>
+            
+            <!-- Sección de componentes -->
+            <div class="education-section">
+                <h3>Tipos de Accesorios</h3>
+                <div class="components-grid">
+                    <!-- Audio -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-headphones"></i>
+                            <h4>Audio</h4>
+                            <p>Dispositivos de sonido</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <!-- El contenido ahora está oculto y solo aparecerá en el modal -->
+                        <div class="info-content" style="display: none;">
+                            <section class="info-section">
+                                <h4>Tipos</h4>
+                                <ul>
+                                    <li>Auriculares inalámbricos</li>
+                                    <li>Altavoces Bluetooth</li>
+                                    <li>Barras de sonido</li>
+                                    <li>Micrófonos</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Cancelación de ruido</li>
+                                    <li>Conexión multipunto</li>
+                                    <li>Resistencia al agua</li>
+                                    <li>Batería de larga duración</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Recomendaciones y Usos</h4>
+                                <ul>
+                                    <li>Ideales para música, videollamadas y gaming</li>
+                                    <li>Modelos populares: Sony WH-1000XM5, JBL Quantum, Blue Yeti</li>
+                                    <li>Compatibles con PC, consolas y móviles</li>
+                                    <li>Algunos incluyen asistentes de voz y controles táctiles</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Almacenamiento -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-hdd"></i>
+                            <h4>Almacenamiento</h4>
+                            <p>Dispositivos de memoria</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="info-details" style="display: none;">
+                            <!-- Contenido que se mostrará en el modal -->
+                            <section class="info-section">
+                                <h4>Tipos</h4>
+                                <ul>
+                                    <li>Discos duros externos</li>
+                                    <li>SSD portátiles</li>
+                                    <li>Memorias USB</li>
+                                    <li>Tarjetas SD</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Alta velocidad de transferencia</li>
+                                    <li>Diferentes capacidades</li>
+                                    <li>Encriptación de datos</li>
+                                    <li>Durabilidad</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Recomendaciones y Usos</h4>
+                                <ul>
+                                    <li>Perfectos para respaldos y transferencias rápidas</li>
+                                    <li>Marcas recomendadas: Samsung, SanDisk, Kingston</li>
+                                    <li>Útiles para fotógrafos, estudiantes y gamers</li>
+                                    <li>Algunos modelos resistentes a golpes y agua</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Carga y Energía -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Carga y Energía</h4>
+                            <p>Soluciones de energía</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="info-details" style="display: none;">
+                            <!-- Contenido que se mostrará en el modal -->
+                            <section class="info-section">
+                                <h4>Tipos</h4>
+                                <ul>
+                                    <li>Cargadores rápidos</li>
+                                    <li>Power banks</li>
+                                    <li>Bases de carga inalámbrica</li>
+                                    <li>Adaptadores</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Tecnologías</h4>
+                                <ul>
+                                    <li>USB Power Delivery</li>
+                                    <li>Quick Charge</li>
+                                    <li>GaN</li>
+                                    <li>Qi Wireless</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Consejos y Seguridad</h4>
+                                <ul>
+                                    <li>Verifica compatibilidad con tus dispositivos</li>
+                                    <li>Evita sobrecargar para prolongar la vida útil</li>
+                                    <li>Power banks ideales para viajes y emergencias</li>
+                                    <li>Marcas confiables: Anker, Aukey, Xiaomi</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Protección -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Protección</h4>
+                            <p>Accesorios de protección</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="info-details" style="display: none;">
+                            <!-- Contenido que se mostrará en el modal -->
+                            <section class="info-section">
+                                <h4>Tipos</h4>
+                                <ul>
+                                    <li>Fundas y cases</li>
+                                    <li>Protectores de pantalla</li>
+                                    <li>Bolsos y mochilas</li>
+                                    <li>Seguros antirrobo</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Resistencia a impactos</li>
+                                    <li>Impermeabilidad</li>
+                                    <li>Materiales premium</li>
+                                    <li>Diseño ergonómico</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Consejos de Compra</h4>
+                                <ul>
+                                    <li>Elige fundas con certificación de resistencia</li>
+                                    <li>Protectores de vidrio templado para mejor protección</li>
+                                    <li>Mochilas con compartimentos acolchados</li>
+                                    <li>Algunas fundas incluyen soporte para tarjetas</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Conectividad -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-network-wired"></i>
+                            <h4>Conectividad</h4>
+                            <p>Adaptadores y hubs</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="info-details" style="display: none;">
+                            <!-- Contenido que se mostrará en el modal -->
+                            <section class="info-section">
+                                <h4>Tipos</h4>
+                                <ul>
+                                    <li>Hubs USB</li>
+                                    <li>Adaptadores HDMI</li>
+                                    <li>Dongles Bluetooth</li>
+                                    <li>Cables especializados</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Múltiples puertos</li>
+                                    <li>Alta velocidad</li>
+                                    <li>Compatibilidad universal</li>
+                                    <li>Plug and play</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Recomendaciones</h4>
+                                <ul>
+                                    <li>Hubs útiles para laptops con pocos puertos</li>
+                                    <li>Adaptadores HDMI para presentaciones y streaming</li>
+                                    <li>Elige cables certificados para evitar daños</li>
+                                    <li>Marcas: UGREEN, Belkin, TP-Link</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Gaming -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-gamepad"></i>
+                            <h4>Gaming</h4>
+                            <p>Accesorios para gamers</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="info-details" style="display: none;">
+                            <!-- Contenido que se mostrará en el modal -->
+                            <section class="info-section">
+                                <h4>Tipos</h4>
+                                <ul>
+                                    <li>Ratones gaming</li>
+                                    <li>Teclados mecánicos</li>
+                                    <li>Mandos y controles</li>
+                                    <li>Alfombrillas gaming</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Características</h4>
+                                <ul>
+                                    <li>Alta precisión DPI</li>
+                                    <li>Switches mecánicos</li>
+                                    <li>RGB personalizable</li>
+                                    <li>Baja latencia</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Recomendaciones y Usos</h4>
+                                <ul>
+                                    <li>Ratones y teclados con retroiluminación RGB</li>
+                                    <li>Mandos compatibles con PC y consolas</li>
+                                    <li>Alfombrillas grandes para mayor comodidad</li>
+                                    <li>Marcas: Logitech, Razer, HyperX</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Productividad -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-keyboard"></i>
+                            <h4>Productividad</h4>
+                            <p>Accesorios de oficina</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="info-details" style="display: none;">
+                            <!-- Contenido que se mostrará en el modal -->
+                            <section class="info-section">
+                                <h4>Tipos</h4>
+                                <ul>
+                                    <li>Teclados ergonómicos</li>
+                                    <li>Ratones verticales</li>
+                                    <li>Soportes para monitor</li>
+                                    <li>Reposamuñecas</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Beneficios</h4>
+                                <ul>
+                                    <li>Mejor postura</li>
+                                    <li>Reducción de fatiga</li>
+                                    <li>Mayor comodidad</li>
+                                    <li>Productividad mejorada</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Consejos de Ergonomía</h4>
+                                <ul>
+                                    <li>Soportes ajustables para monitores</li>
+                                    <li>Reposamuñecas de gel para evitar lesiones</li>
+                                    <li>Ratones verticales para prevenir túnel carpiano</li>
+                                    <li>Teclados divididos para mayor comodidad</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Fotografía y Video -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-camera"></i>
+                            <h4>Fotografía y Video</h4>
+                            <p>Accesorios multimedia</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="info-details" style="display: none;">
+                            <!-- Contenido que se mostrará en el modal -->
+                            <section class="info-section">
+                                <h4>Tipos</h4>
+                                <ul>
+                                    <li>Trípodes y soportes</li>
+                                    <li>Anillos de luz</li>
+                                    <li>Micrófonos externos</li>
+                                    <li>Objetivos para móvil</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Usos</h4>
+                                <ul>
+                                    <li>Fotografía profesional</li>
+                                    <li>Streaming</li>
+                                    <li>Videoconferencias</li>
+                                    <li>Creación de contenido</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Recomendaciones y Usos</h4>
+                                <ul>
+                                    <li>Trípodes ligeros para viajes</li>
+                                    <li>Anillos de luz para streaming y selfies</li>
+                                    <li>Micrófonos externos mejoran la calidad de audio</li>
+                                    <li>Objetivos para móvil amplían posibilidades creativas</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Redes y Conectividad -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-wifi"></i>
+                            <h4>Redes y Conectividad</h4>
+                            <p>Extensores y adaptadores</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="info-details" style="display: none;">
+                            <!-- Contenido que se mostrará en el modal -->
+                            <section class="info-section">
+                                <h4>Tipos</h4>
+                                <ul>
+                                    <li>Repetidores WiFi</li>
+                                    <li>Adaptadores Bluetooth</li>
+                                    <li>Cables de red</li>
+                                    <li>Routers portátiles</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Ventajas</h4>
+                                <ul>
+                                    <li>Mayor cobertura</li>
+                                    <li>Conexión estable</li>
+                                    <li>Fácil configuración</li>
+                                    <li>Compatibilidad universal</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Consejos y Ventajas</h4>
+                                <ul>
+                                    <li>Repetidores WiFi para casas grandes</li>
+                                    <li>Routers portátiles ideales para viajes</li>
+                                    <li>Adaptadores Bluetooth para equipos antiguos</li>
+                                    <li>Cables de red CAT6 para máxima velocidad</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+
+                    <!-- Realidad Virtual -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-vr-cardboard"></i>
+                            <h4>Realidad Virtual</h4>
+                            <p>Accesorios VR/AR</p>
+                            <button class="info-btn">Ver información</button>
+                        </div>
+                        <div class="info-details" style="display: none;">
+                            <!-- Contenido que se mostrará en el modal -->
+                            <section class="info-section">
+                                <h4>Tipos</h4>
+                                <ul>
+                                    <li>Visores VR</li>
+                                    <li>Controladores</li>
+                                    <li>Sensores de movimiento</li>
+                                    <li>Adaptadores inalámbricos</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Aplicaciones</h4>
+                                <ul>
+                                    <li>Gaming inmersivo</li>
+                                    <li>Educación virtual</li>
+                                    <li>Simulación profesional</li>
+                                    <li>Entretenimiento 3D</li>
+                                </ul>
+                            </section>
+                            <section class="info-section">
+                                <h4>Recomendaciones y Usos</h4>
+                                <ul>
+                                    <li>Visores compatibles con PC y consolas</li>
+                                    <li>Controladores con sensores de movimiento</li>
+                                    <li>Ideales para simuladores y juegos educativos</li>
+                                    <li>Marcas: Meta Quest, HTC Vive, PlayStation VR</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de productos por categoría -->
+            <div class="education-section">
+                <h3>Catálogo de Accesorios por Categoría</h3>
+                <div class="components-grid">
+                    <!-- Accesorios Premium -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-crown"></i>
+                            <h4>Accesorios Premium</h4>
+                            <p>Alta calidad y rendimiento</p>
+                            <button class="info-btn">Ver modelos</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Modelos Premium</h4>
+                                    <ul>
+                                        <li>Sony WH-1000XM5
+                                            <br>- Cancelación de ruido líder
+                                            <br>- 30 horas de batería
+                                            <br>- Precio: $7,999 MXN
+                                        </li>
+                                        <li>Samsung Galaxy Watch 6 Classic
+                                            <br>- Bisel giratorio, ECG
+                                            <br>- WearOS, NFC
+                                            <br>- Precio: $8,999 MXN
+                                        </li>
+                                        <!-- ...más productos premium... -->
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accesorios Gama Media -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-star"></i>
+                            <h4>Gama Media</h4>
+                            <p>Buena relación calidad-precio</p>
+                            <button class="info-btn">Ver modelos</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Modelos Gama Media</h4>
+                                    <ul>
+                                        <li>JBL Flip 5
+                                            <br>- Sonido potente, resistente al agua
+                                            <br>- 12 horas de batería
+                                            <br>- Precio: $2,999 MXN
+                                        </li>
+                                        <li>Logitech MX Master 3
+                                            <br>- Raton ergonómico, carga rápida
+                                            <br>- Conexión Bluetooth y USB
+                                            <br>- Precio: $3,499 MXN
+                                        </li>
+                                        <!-- ...más productos gama media... -->
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accesorios Económicos -->
+                    <div class="component-card">
+                        <div class="card-header">
+                            <i class="fas fa-check"></i>
+                            <h4>Económicos</h4>
+                            <p>Funcionales y asequibles</p>
+                            <button class="info-btn">Ver modelos</button>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-details">
+                                <section class="info-section">
+                                    <h4>Modelos Económicos</h4>
+                                    <ul>
+                                        <li>Baseus Encok W04
+                                            <br>- Auriculares inalámbricos económicos
+                                            <br>- Hasta 20 horas de reproducción
+                                            <br>- Precio: $899 MXN
+                                        </li>
+                                        <li>TP-Link TL-WR902AC
+                                            <br>- Router portátil, fácil configuración
+                                            <br>- Doble banda, hasta 750Mbps
+                                            <br>- Precio: $1,199 MXN
+                                        </li>
+                                        <!-- ...más productos económicos... -->
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de comentarios -->
+            <div class="comments-section">
+                <h3>Comentarios</h3>
+                
+                <!-- Login Section -->
+                <div id="loginSection" class="auth-section">
+                    <form id="loginForm" class="login-form">
+                        <h4>Iniciar Sesión</h4>
+                        <div class="login-options">
+                            <div id="g_id_onload"
+                                data-client_id="TU_CLIENT_ID_DE_GOOGLE"
+                                data-callback="handleGoogleLogin"
+                                data-auto_prompt="false">
+                            </div>
+                            <div class="g_id_signin"
+                                data-type="standard"
+                                data-size="large"
+                                data-theme="outline"
+                                data-text="sign_in_with"
+                                data-shape="rectangular"
+                                data-logo_alignment="left">
+                            </div>
+
+                            <div class="divider">
+                                <span>O</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="username" placeholder="ejemplo@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" id="password" placeholder="Contraseña" required>
+                            </div>
+                            <div id="loginError" class="error-message"></div>
+                            <button type="submit">Iniciar Sesión</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Comment Section -->
+                <div id="commentSection" class="comment-section" style="display: none;">
+                    <div class="user-info">
+                        <span id="userDisplay"></span>
+                        <button id="logoutBtn">Cerrar Sesión</button>
+                    </div>
+                    
+                    <form id="commentForm" class="comment-form">
+                        <textarea id="commentText" placeholder="Escribe tu comentario..." required></textarea>
+                        <button type="submit">Publicar Comentario</button>
+                    </form>
+
+                    <div id="commentsList" class="comments-list">
+                        <!-- Los comentarios se insertarán aquí -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="accesorios.js"></script>
+    <script src="comments.js"></script>
+</body>
+</html>
